@@ -5,34 +5,37 @@ bundle install
 
 rails server
 
-Routes:
-
-#POST /player , creo nuevos jugadores
-
-#POST /game , creo nuevo juego
-
-#PUT /game/id , hago los movimientos en el juego creado
-
-
-
 ## Documentacion 
-1. [POST /player] (#new-players)
+1. POST /player
+
 
 Body
+
+
  ```
 {
   "name":"{nombre player}"
 }
 ```
-2. [POST /game ](#new-games)
+2. POST /game
+
+
 Body
+
+
  ```
 {
   "name":"{nombre juego}"
 }
 ```
 
-3. [Generar movimientos en el juego creado](#movements)
+3. PUT /game/id
+
+
+Body
+
+
+
  ```
 {
   "position":"{posicion del arreglo}"
